@@ -1,0 +1,231 @@
+<!-- 02/09/23 Product Landing Page using HTML/CSS Portfolio Project-->
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Product Landing Page</title>
+      <style>
+          /* 02/09/23 Product Landing Page using HTML/CSS Portfolio Project*/
+body {
+  font-family: arial, sans-serif;
+  padding: 1vw;
+  background-color:rgb(227, 181, 126);
+}
+
+#form-div {
+  border: 3px solid navy;
+  padding: 15px;
+  margin: 20px;
+  background-color: #e9edf0;
+  margin-bottom: 15vh;
+}
+
+h4 {
+  color: navy;;
+  margin-top: 12vh;
+  text-align: center;
+}
+
+input {
+  margin: 1vh;
+}
+
+#submit {
+  background-color: navy;
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+footer a:link {
+  color: black;
+}
+
+li:hover {
+  background-color: #0793d9;
+}
+
+a:visited {
+  color:gray;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4vh;
+  color: #0793d9;
+  padding-right: 3vw;
+}
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  border: 4px solid #e9edf0;
+  padding: 2vw;
+  background-color: #e9edf0;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 3%;
+    list-style: none;
+    border: 1px solid black;
+    background: navy;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  section {
+    padding-top: 7vh;
+  }
+
+  header {
+    color: navy;
+  }
+
+  #vid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+p {
+  padding-top: 3vh;
+  padding-bottom: 4vh;
+}
+
+header {
+  font-weight: bold;
+}
+
+#header-img {
+  width: 7%;
+  padding-top: 2%;
+  object-fit: cover;
+}
+
+footer {
+  font-size: 2vh;
+  color: navy;
+}
+
+button {
+  background-color: navy;
+  color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  flex-wrap: wrap;
+  }
+
+  h2 {
+    color: navy;
+  }
+
+  .containers {
+    width: 25%
+  }
+
+h4 {
+  font-size: 5vh;
+}
+@media only screen and (max-width: 575px) {
+  #container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+    ul {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+    #header {
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    padding-top: 0;
+  }
+}
+      </style>
+    </head>
+    <body>
+      <a id="top"></a>
+      <main>
+        <header id="header"><h1>All Kerala <br>Travells</h1><img id="header-img" src="https://cdn.pixabay.com/photo/2022/01/03/23/04/travel-6913775_1280.png"/>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#about">About Us</a></li>
+            <li><a class="nav-link" href="tour">About Tours</a></li>
+
+
+            <li><a class="nav-link" href="entertainment">About Entertainments</a></li>
+            <li><a class="nav-link" href="resort">About Resorts</a></li>
+            <li><a class="nav-link" href="contact">Contact Us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+          <section>
+              <header id="about"><h1 style="color:black;">About Us <br> ___________</h1></header>
+          <p><i> All Kerala travels are here for you to provide you a full package holiday trip for you and your family. We are also providing a lots of new offers and discounts for our guests.We also host Surprise birthday party, Date night with your Partner. </i></p>
+
+              <p><i>We provide 5 Star Reviewed Hotels and Resorts for our guests . We also provide delicious homely food With Lots of Variety dishes.We also host lots of entertainment programs to make sure you enjoy our service. To know more about oru services and Packages ,Scroll down and see more about us .</i></p>
+          <div id="container"><h2 style="color:black;">Plan Your Holidays With<br><b> All Kerala Travels.</b></h2>
+              <br>
+
+
+
+             <div class="containers"><img  src="static/images/booktour.jpg"/><button>Plan Your Holidays With Us</button></div><br>
+                         <div class="containers"><img  src="static/houseboat.jpg"/><button>We Arrange HouseBoats</button></div><br>
+                         <div class="containers"><img  src="static/daytour.jpg"/><button>We Arrange DayOuts</button></div><br>
+                        <div class="containers"> <img  src="static/images/kadhakali.jpg"/><button>We Organise Entertaiment Programs</button></div><br>
+                         <div class="containers"><img  src="static/resourts.jpg"/><button>We Arrange Resourts</button></div><br>
+          </section>
+
+
+          
+
+
+
+
+
+
+<p style="text-align:center;"><a href="#top">Back to top</a></p>
+
+              </main>
+        <footer style="text-align:center;"> Copyright &copy;2023 . All rights reserved</footer>
+    <script>
+        // for smooth scrolling
+            $(document).ready(function () {
+            $("a").on("click", function (event) {
+                if(this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $("html,body").animate({ scrollTop: $(hash).offset().top }, 800, function(){
+                            window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+    </script>
+      </body>
+  </html>
